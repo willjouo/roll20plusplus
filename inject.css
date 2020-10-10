@@ -170,6 +170,13 @@ body {
     transform: translate(25px, 0);
 }
 
+#page-toolbar {
+    background-color: #000000;
+    left: 0;
+    width: 100%;
+    border-radius: 0;
+}
+
 /*********************************************/
 /* Sidebar show/hide button */
 /*********************************************/
@@ -188,10 +195,13 @@ div#sidebarcontrol:hover {
     transform: translate(-20px, 0);
 }
 
-/* Right side bar */
+/*********************************************/
+/* Sidebar */
+/*********************************************/
 #rightsidebar {
     border-left: none;
     background-color: #121212;
+    background-image: none;
 }
 #rightsidebar ul.tabmenu {
     background-color: #121212;
@@ -224,6 +234,21 @@ div#sidebarcontrol:hover {
 .textchatcontainer {
     color: #fff;
 }
+.textchatcontainer .message.you {
+    background-color: #192a56;
+}
+.textchatcontainer .message.you .spacer {
+    background-color: #0a132b;
+}
+.textchatcontainer .message.system {
+    background-color: #28751d;
+}
+.textchatcontainer .message.system .spacer {
+    background-color: #195211;
+}
+.textchatcontainer .message .spacer {
+    background-color: #000000;
+}
 .textchatcontainer .message.private {
     background-color: #ee6002;
 }
@@ -238,7 +263,7 @@ div#sidebarcontrol:hover {
 }
 
 /*********************************************/
-/* Chat dice roll */
+/* Chat dice roll & descriptions */
 /*********************************************/
 .textchatcontainer .formula, .textchatcontainer .rolled {
     background-color: #000000;
@@ -246,7 +271,7 @@ div#sidebarcontrol:hover {
     border-radius: 0;
 }
 .textchatcontainer .rolled {
-    color: #fff;
+    color: #ffffff;
 }
 .diceroll .backing {
     top: -4px;
@@ -257,4 +282,102 @@ div#sidebarcontrol:hover {
 }
 .diceroll.critfail .didroll {
     color: #e84118;
+}
+.textchatcontainer .rollresult.quantumRoll {
+    background: none;
+}
+.textchatcontainer .inlinerollresult {
+    background-color: #000000;
+}
+.sheet-rolltemplate-simple div.sheet-container, .sheet-rolltemplate-simple3D div.sheet-container, .sheet-rolltemplate-skill div.sheet-container {
+    background: none;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 0;
+}
+.sheet-rolltemplate-atk div.sheet-desc.sheet-info, .sheet-rolltemplate-atkdmg div.sheet-desc.sheet-info, .sheet-rolltemplate-dmg div.sheet-desc.sheet-info, .sheet-rolltemplate-desc div.sheet-desc.sheet-info {
+    background: none;
+    background-color: #000000;
+    color: #ffffff;
+}
+.sheet-rolltemplate-atk div.sheet-container, .sheet-rolltemplate-atkdmg div.sheet-container.sheet-atk, .sheet-rolltemplate-dmg div.sheet-atk {
+    background: none;
+    background-color: #000000;
+    color: #ffffff;
+}
+.sheet-rolltemplate-atk .sheet-container, .sheet-rolltemplate-atkdmg .sheet-container.sheet-atk, .sheet-rolltemplate-dmg .sheet-atk {
+    border-radius: 0;
+}
+.sheet-rolltemplate-atk a[href^="~"] {
+    color: #ffffff;
+}
+.sheet-rolltemplate-atk div.sheet-desc.sheet-info .sheet-top, .sheet-rolltemplate-atkdmg div.sheet-desc.sheet-info .sheet-top, .sheet-rolltemplate-dmg div.sheet-desc.sheet-info .sheet-top, .sheet-rolltemplate-desc div.sheet-desc.sheet-info .sheet-top {
+    background: none;
+}
+.sheet-rolltemplate-atk div.sheet-desc.sheet-info .sheet-middle, .sheet-rolltemplate-atkdmg div.sheet-desc.sheet-info .sheet-middle, .sheet-rolltemplate-dmg div.sheet-desc.sheet-info .sheet-middle, .sheet-rolltemplate-desc div.sheet-desc.sheet-info .sheet-middle {
+    background: none;
+}
+.sheet-rolltemplate-atk div.sheet-desc.sheet-info .sheet-bottom, .sheet-rolltemplate-atkdmg div.sheet-desc.sheet-info .sheet-bottom, .sheet-rolltemplate-dmg div.sheet-desc.sheet-info .sheet-bottom, .sheet-rolltemplate-desc div.sheet-desc.sheet-info .sheet-bottom {
+    background: none;
+}
+.sheet-rolltemplate-atkdmg .sheet-damagetemplate .inlinerollresult.fullcrit, .sheet-rolltemplate-atkdmg .sheet-damagetemplate .inlinerollresult.fullfail, .sheet-rolltemplate-atkdmg .sheet-damagetemplate .inlinerollresult.importantroll, .sheet-rolltemplate-dmg .sheet-damagetemplate .inlinerollresult.fullcrit, .sheet-rolltemplate-dmg .sheet-damagetemplate .inlinerollresult.fullfail, .sheet-rolltemplate-dmg .sheet-damagetemplate .inlinerollresult.importantroll, .sheet-rolltemplate-npcaction .sheet-damagetemplate .inlinerollresult.fullcrit, .sheet-rolltemplate-npcaction .sheet-damagetemplate .inlinerollresult.fullfail, .sheet-rolltemplate-npcaction .sheet-damagetemplate .inlinerollresult.importantroll, .sheet-rolltemplate-npcfullatk .sheet-damagetemplate .inlinerollresult.fullcrit, .sheet-rolltemplate-npcfullatk .sheet-damagetemplate .inlinerollresult.fullfail, .sheet-rolltemplate-npcfullatk .sheet-damagetemplate .inlinerollresult.importantroll, .sheet-rolltemplate-npcdmg .sheet-damagetemplate .inlinerollresult.fullcrit, .sheet-rolltemplate-npcdmg .sheet-damagetemplate .inlinerollresult.fullfail, .sheet-rolltemplate-npcdmg .sheet-damagetemplate .inlinerollresult.importantroll, .sheet-rolltemplate-dmgaction .sheet-damagetemplate .inlinerollresult.fullcrit, .sheet-rolltemplate-dmgaction .sheet-damagetemplate .inlinerollresult.fullfail, .sheet-rolltemplate-dmgaction .sheet-damagetemplate .inlinerollresult.importantroll, .sheet-rolltemplate-atkdmg .sheet-desc .inlinerollresult.fullcrit, .sheet-rolltemplate-atkdmg .sheet-desc .inlinerollresult.importantroll, .sheet-rolltemplate-atkdmg .sheet-desc .inlinerollresult.fullfail, .sheet-rolltemplate-dmg .sheet-desc .inlinerollresult.fullcrit, .sheet-rolltemplate-dmg .sheet-desc .inlinerollresult.importantroll, .sheet-rolltemplate-dmg .sheet-desc .inlinerollresult.fullfail .sheet-rolltemplate-atk .sheet-desc .inlinerollresult.fullcrit, .sheet-rolltemplate-atk .sheet-desc .inlinerollresult.importantroll, .sheet-rolltemplate-atk .sheet-desc .inlinerollresult.fullfail, .sheet-rolltemplate-mancerroll .inlinerollresult.fullcrit, .sheet-rolltemplate-mancerroll .inlinerollresult.importantroll, .sheet-rolltemplate-mancerroll .inlinerollresult.fullfail, .sheet-rolltemplate-mancerhproll .inlinerollresult.fullcrit, .sheet-rolltemplate-mancerhproll .inlinerollresult.importantroll, .sheet-rolltemplate-mancerhproll .inlinerollresult.fullfail {
+    color: #ffffff;
+}
+.sheet-rolltemplate-dmg div.sheet-container, .sheet-rolltemplate-atkdmg div.sheet-container.sheet-damagetemplate {
+    background: none;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 0;
+}
+/* The spell description */
+.sheet-rolltemplate-npc, .sheet-rolltemplate-npcaction .sheet-container, .sheet-rolltemplate-npcfullatk .sheet-container, .sheet-rolltemplate-npcatk, .sheet-rolltemplate-npcdmg, .sheet-rolltemplate-dmgaction, .sheet-rolltemplate-traits {
+    width: 90%;
+    padding: 7px;
+    border: 1px solid #444444;
+    background-color: #000000;
+    margin-top: 10px;
+}
+.sheet-rolltemplate-traits .sheet-header {
+    font-family: inherit;
+    color: #a92424;
+    margin-bottom: 2px;
+}
+.sheet-rolltemplate-traits .sheet-subheader span {
+    font-size: 11px;
+}
+.sheet-rolltemplate-spell .sheet-container {
+    font-family: inherit;
+    border: 1px solid #444444;
+    color: #ffffff;
+    padding: 8px;
+    background: url(https://i.imgur.com/Wn5rMbZ.jpg) center center;
+}
+.sheet-rolltemplate-spell .sheet-title {
+    color: #a92424;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/*********************************************/
+/* Chat input */
+/*********************************************/
+#textchat-input {
+    border: none;
+    color: #ffffff;
+    background-color: #121212;
+}
+#textchat-input textarea {
+    background-color: #000000;
+    border: 1px solid #222222;
+    border-radius: 6px;
+    color: #ffffff;
+}
+#textchat-input label{
+    top: 2px;
+}
+#speakingas {
+    background-color: #000000;
+    border: 1px solid #222222;
+    border-radius: 6px;
+    color: #dddddd;
 }
