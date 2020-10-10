@@ -2,6 +2,8 @@
 body {
     background: none;
     background-color: #121212;
+    background: url(https://i.imgur.com/Wn5rMbZ.jpg);
+    background-size: cover;
 }
 
 /* Generic */
@@ -214,4 +216,45 @@ div#sidebarcontrol:hover {
     color: #ffffff;
     background: #121212;
     border: none;
+}
+
+/*********************************************/
+/* Chat */
+/*********************************************/
+.textchatcontainer {
+    color: #fff;
+}
+.textchatcontainer .message.private {
+    background-color: #ee6002;
+}
+.textchatcontainer .message.private .spacer {
+    background-color: #e54304;
+}
+.avatar img {
+    border-radius: 100px;
+}
+.textchatcontainer .tstamp {
+    margin: 0;
+}
+
+/*********************************************/
+/* Chat dice roll */
+/*********************************************/
+.textchatcontainer .formula, .textchatcontainer .rolled {
+    background-color: #000000;
+    border: 0;
+    border-radius: 0;
+}
+.textchatcontainer .rolled {
+    color: #fff;
+}
+.diceroll .backing {
+    top: -4px;
+    font-size: 35px;
+}
+.diceroll.critsuccess .didroll {
+    color: #4cd137;
+}
+.diceroll.critfail .didroll {
+    color: #e84118;
 }
