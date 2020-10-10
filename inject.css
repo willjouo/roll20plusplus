@@ -1,0 +1,217 @@
+/* The background */
+body {
+    background: none;
+    background-color: #121212;
+}
+
+/* Generic */
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #999999;
+    border: 0;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #666666;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #333333;
+}
+
+::-webkit-scrollbar-track {
+    background: #F0F0F0;
+    border: 0;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: #F0F0F0;
+}
+
+::-webkit-scrollbar-track:active {
+    background: #F0F0F0;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+/* Corner: no more border radius */
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+    border-radius: 0;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+    border-radius: 0;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+    border-radius: 0;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-radius: 0;
+}
+
+/*********************************************/
+/* Floating bar */
+/*********************************************/
+#floatingtoolbar {
+    left: 10px; /* Make the bar more close to edge of screen */
+    top: 10px; /* Make the bar more close to edge of screen */
+    border: 1px solid #444444;
+    box-shadow: 1px 1px 3px #000000;
+    background-color: #000000;
+}
+
+#floatingtoolbar li:hover, #floatingtoolbar li.activebutton {
+    color: #111111;
+    background-color: #eeeeee;
+}
+
+#floatingtoolbar li {
+    color: #dddddd;
+    padding: 5px 3px; /* Fix to make buttons more square */
+    border-bottom: 1px solid #000000;
+}
+
+#floatingtoolbar div.submenu {
+    top: -11px; /* fix floating submenu not at the right place */
+}
+
+#floatingtoolbar div.submenu ul {
+    background-color: #000000;
+    border-radius: 0;
+    border: 1px solid #222222;
+    box-shadow: 1px 1px 10px #000000;
+}
+
+#editinglayer li.gm_slider_box {
+    background-color: #000000;
+    color: #dddddd;
+}
+
+/* layer selection, the way it was made is horrible. */
+#editinglayer.objects div.submenu li.chooseobjects { background-color: #1d5b84; color: #ffffff; }
+#editinglayer.map div.submenu li.choosemap { background-color: #1d5b84; color: #ffffff; }
+#editinglayer.gmlayer div.submenu li.choosegmlayer { background-color: #1d5b84; color: #ffffff; }
+#editinglayer.walls div.submenu li.choosewalls { background-color: #1d5b84; color: #ffffff; } /* actual fix, it doesn't work as intended on roll20 */
+
+/* remove the animation on the zoom submenu, because it's the only one with an animation... */
+#floatingtoolbar div.submenu ul.selZoom { animation: none; }
+#floatingtoolbar div.submenu ul.selZoom li { animation: none; }
+
+#zoompanel ul li.zoomClickBack {
+    background-color: #1d5b84;
+    color: #ffffff;
+    border: none; /* remove border otherwise when clicked, it moves the text 1px below because of the border */
+}
+
+/* colors for measure submenu */
+#measure li.activerulermode {
+    background-color: #1d5b84; color: #ffffff;
+}
+
+/*********************************************/
+/* Secondary toolbar */
+/*********************************************/
+#secondary-toolbar {
+    left: 50px;
+    top: 10px;
+    border: 1px solid #444444;
+    box-shadow: 1px 1px 3px #000000;
+    background-color: #000000;
+    opacity: 1;
+}
+
+#secondary-toolbar ul {
+    height: 34px;
+}
+
+#secondary-toolbar li {
+    border: 0;
+    padding: 3px 5px;
+    color: #ffffff;
+}
+
+/*********************************************/
+/* Zoom slider */
+/*********************************************/
+#zoomclick {
+    top: 40px;
+    opacity: 0.3;
+}
+#zoomclick:hover {
+    opacity: 1;
+}
+
+/*********************************************/
+/* Page handler */
+/*********************************************/
+#page-toolbar .handle {
+    border: 1px solid #444444;
+    color: #eeeeee;
+    background-color: #000000;
+    border-radius: 0;
+    opacity: 1;
+    bottom: -34px !important;
+    transform: translate(25px, 0);
+}
+
+/*********************************************/
+/* Sidebar show/hide button */
+/*********************************************/
+#sidebarcontrol {
+    opacity: 1;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #444444;
+    color: #eeeeee;
+    background-color: #000000;
+    text-align: center;
+    transform: translate(-20px, 0);
+}
+div#sidebarcontrol:hover {
+    color: #ffffff;
+    transform: translate(-20px, 0);
+}
+
+/* Right side bar */
+#rightsidebar {
+    border-left: none;
+    background-color: #121212;
+}
+#rightsidebar ul.tabmenu {
+    background-color: #121212;
+    border: 0;
+    top: -2px;
+}
+#rightsidebar .ui-tabs-nav li.ui-state-active a {
+    color: #fff;
+}
+.ui-tabs .ui-tabs-nav li:hover, .ui-tabs .ui-tabs-nav li a:hover {
+    background: #121212;
+}
+#rightsidebar .ui-tabs-nav li:hover {
+    border: none;
+}
+#rightsidebar .ui-tabs-nav a {
+    color: #969696;
+    text-shadow: none;
+    border: none;
+}
+#rightsidebar .ui-tabs-nav a:hover {
+    color: #ffffff;
+    background: #121212;
+    border: none;
+}
